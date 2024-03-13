@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Asp.Versioning.Http" Version="8.0.0" />
+        <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.0.0" />
+        <PackageReference Include="AutoMapper" Version="13.0.1" />
+        <PackageReference Include="FluentValidation" Version="11.9.0" />
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Core\Responses\BadRequestResponse.cs" />
+      <Compile Remove="Core\CustomExceptions\VehicleTypeNotAvailableException.cs" />
+      <Compile Remove="Core\ErrorMessages.cs" />
+      <Compile Remove="Core\Validators\VehicleRequestValidator.cs" />
+      <Compile Remove="Core\Validators\**" />
+      <Compile Remove="Middlewares\RequestsValidationExceptionHandler.cs" />
+      <Compile Remove="Core\CustomExceptions\StartBidZeroValueException.cs" />
+      <Compile Remove="Core\CustomExceptions\StartBidValueNegativeException.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Core\Validators\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Core\Validators\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Core\Validators\**" />
+    </ItemGroup>
+
+</Project>

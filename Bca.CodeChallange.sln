@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{878DCB9A-33B7-43EE-ABD9-F5E69F5ACD2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A93380E5-A09C-419D-8464-3B00BA52CDFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car.Auction.Management.Api", "src\Car.Auction.Management.Api\Car.Auction.Management.Api.csproj", "{C72AD892-A8E9-4319-94E5-AD46E1DA1908}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car.Auction.Management.Api.UnitTests", "tests\Car.Auction.Management.Api.UnitTests\Car.Auction.Management.Api.UnitTests.csproj", "{39244974-9C51-47BE-B2C0-63DC6F1866D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C72AD892-A8E9-4319-94E5-AD46E1DA1908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C72AD892-A8E9-4319-94E5-AD46E1DA1908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C72AD892-A8E9-4319-94E5-AD46E1DA1908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C72AD892-A8E9-4319-94E5-AD46E1DA1908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39244974-9C51-47BE-B2C0-63DC6F1866D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39244974-9C51-47BE-B2C0-63DC6F1866D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39244974-9C51-47BE-B2C0-63DC6F1866D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39244974-9C51-47BE-B2C0-63DC6F1866D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C72AD892-A8E9-4319-94E5-AD46E1DA1908} = {878DCB9A-33B7-43EE-ABD9-F5E69F5ACD2F}
+		{39244974-9C51-47BE-B2C0-63DC6F1866D7} = {A93380E5-A09C-419D-8464-3B00BA52CDFC}
+	EndGlobalSection
+EndGlobal
